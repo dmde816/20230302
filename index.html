@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style</title>
+</head>
+<body>
+    이틀전까지 한 내용은
+    태그 : div, p, h1~h6, span, br, img, table, a, 
+    스타일을 줘보자 속성(attribute) style을 주자
+
+    <div style="width: 100%; height: 60px; background-color: black; padding: 0; margin: 0; box-sizing: border-box;">   </div>
+        style 속성 = css(cascading style sheet) <br>
+        width: 너비, max-width, min-width <br>
+        height : 높이, max-height, min-height <br>
+        background-color : 배경색, 색상을 태그에 입힐 수 있다., tgb(255,255,255);
+        padding(태그 내부 여백), margin(외부의 여백) : top, right, bottom, left
+        값을 한 개만 썼을 때는 사방면이 그 값으로 적용된다.
+        각각 지정하고 싶을 때는 4개 값 모두 작성 해줘도 된다. ex top 100, bottom 100 ...
+        값을 두개 작성했을 때 상하 좌우로 짝을 맞춰 지정해야함.
+        box-sizing : 박스의 크기를 어떻게 설정할지 기준을 설정
+
+        <!-- div는 블록 요소를 가지고 있는데  -->
+        <div style="width: 500px;">
+            <div style="display: block;">
+                <!-- 이렇게하면 원래 가지고 있던 div의 속성을 바꾸는 것 -->
+                속성을 추가할 때 
+                속성명= "속성 값"
+                diplay: 영역의 노출 크기를 어떻게 설정할지 기준을 설정한다.
+                부모 태그를 기준으로 모든 너비를 차지한다. 높이는 자식의 기준으로
+                body가 부모이면 바디만큼의 너비를 가지고, div를 부모로 쓰고 부모 div의 크기를 제한하면 그만큼의 크기를 가진다.
+                inline-block 본인의 자리만 차지함
+            </div>
+        </div> 
+        <div style="width: 100%;">
+            <div style="width: 200px; height: 200px; border: 1px solid; display: inline-block;"></div>
+            <div style="width: 200px; height: 200px; border: 1px solid; display: inline-block;"></div>
+        </div> 
+        <!-- inlline은 부모의 크기가 커도 자식이 자신의 크기만큼만 영역을 차지한다. -->
+
+       <!-- 각 자식들에게 크기를 주어도 부모의 크기를 넘으면 
+        알아서 자식들이 부모의 크기 안으로 비율이 정해진다. -->
+        <!-- display flex를 알아보자 -->
+        <!-- flex는 개발자 모드에서 정렬, 등 사용할 수 있어서 많이 쓴다. -->
+        <div style="display: flex;">
+            <div style="width: 200px; height: 200px; border: 1px solid;"></div>
+            <div style="width: 200px; height: 200px; border: 1px solid;"></div>
+            <div style="width: 200px; height: 200px; border: 1px solid;"></div>
+            <div style="width: 200px; height: 200px; border: 1px solid;"></div>
+            <div style="width: 200px; height: 200px; border: 1px solid;"></div>
+            <div style="width: 200px; height: 200px; border: 1px solid;"></div>
+            <div style="width: 200px; height: 200px; border: 1px solid;"></div>
+            <div style="width: 200px; height: 200px; border: 1px solid;"></div>
+        </div>
+            
+        <div>
+            <h1 style="color: red;">경일 게임 아카데미</h1>
+            <h2 style="color: blue;">경일 게임 아카데미</h2>
+            <h3 style="color: aqua;">경일 게임 아카데미</h3>
+        </div>
+        <!-- 그냥 color는 글자의 색깔 -->
+
+        <p></p>
+        <h1></h1>
+
+  
+</body>
+</html>

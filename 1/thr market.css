@@ -1,0 +1,49 @@
+#p{
+    display: inline;
+    width: 960px;
+}
+.one{
+    display: flex;
+    width: 750px;
+    height: 250px;
+    border-bottom: 1px solid;
+}
+.image{
+    width: 220px;
+    height: 200px;
+    border: 1px solid;
+    text-align: center;
+}
+#blank{
+    width: 40px;
+    height: 200px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+
+}
+.tbox{
+    display: flex;
+    width: 500px;
+
+}
+#title{
+    width: 500px;
+    text-align: left;
+}
+#date{
+    width: 550px;
+    text-align: right;
+}
+
+#sentense{
+    width: 500px;
+}
+
+#look{
+    width: 500px;
+    text-align: right;
+}
+

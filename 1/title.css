@@ -1,0 +1,24 @@
+
+#p{
+    width: 960px;
+    height: 500px ;
+    display: flex;
+    flex-wrap: wrap;
+}
+.one{
+    width: 230px;
+    height: 250px;
+
+}
+.image{
+    width: 220px;
+    height: 200px;
+    border: 1px solid;
+    text-align: center;
+}
+
+.title{
+text-align: center;
+
+}
+
